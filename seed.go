@@ -39,7 +39,7 @@ func seed(clnt client.Client) {
 		time.Minute * time.Duration(i+1) +
 		time.Second * time.Duration(i))
 
-		pt, err := client.NewPoint("login", tags, fields, timein)
+		pt, err := client.NewPoint("visitors", tags, fields, timein)
 		if err != nil {
 			log.Fatal(err)
 		}
