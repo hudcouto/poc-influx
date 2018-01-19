@@ -33,6 +33,7 @@ func seed(clnt client.Client) {
 		fields := map[string]interface{}{
 			"browser": browsers[rand.Intn(len(browsers))],
 			"os": os[rand.Intn(len(os))],
+			"value": 1,
 		}
 
 		timein := time.Now().Local().Add(time.Hour +
